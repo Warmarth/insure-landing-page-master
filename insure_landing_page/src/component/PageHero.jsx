@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { btn } from "./MenuList";
+// import { Btn } from "./MenuList";
 import { patterns } from "./data";
+import { Btn } from "./utilites";
 
 const PageHero = ({ props }) => {
   const { title, content, small, big } = props;
@@ -43,11 +44,11 @@ const PageHero = ({ props }) => {
             {title}
           </h1>
           <p className={`leading-[1.5] text-[16px] px-3 md:px-0`}>{content}</p>
-          <button
-            className={`border hover:border-white hover:bg-transparent hover:text-white outline-none px-[2rem] py-[.5rem] `}
-          >
-            {btn}
-          </button>
+
+          <Btn
+            styles={`border hover:border-white hover:bg-transparent hover:text-white outline-none px-[2rem] py-[.5rem] uppercase`}
+            text="view plans"
+          />
         </div>
         <img
           src={

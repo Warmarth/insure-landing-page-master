@@ -9,6 +9,7 @@ const Home = () => {
       <Navbar />
       <PageHero props={Hero} />
       <Proceedure props={proceedure} />
+      {/* <FindCard /> */}
     </main>
   );
 };

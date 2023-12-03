@@ -24,3 +24,15 @@
 .dmSerif {
   font-family: var(--family_2);
 }
+
+.d{
+  background-image: url('./assets/images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+@media screen and (min-width:950px) {
+.d{
+  background-image: url('./assets/images/bg-pattern-how-we-work-desktop.svg');
+}
+}

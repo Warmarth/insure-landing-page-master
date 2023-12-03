@@ -2,8 +2,9 @@ import logo from "../assets/images/logo.svg";
 import hamburger from "../assets/images/icon-hamburger.svg";
 import close from "../assets/images/icon-close.svg";
 import { useState } from "react";
-import MenuList, { btn } from "./MenuList";
+import MenuList from "./MenuList";
 import { navitem } from "./data";
+import { Btn, Mapper } from "./utilites";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -12,33 +13,22 @@ const Navbar = () => {
   };
 
   return (
-    <header className={` bg-green-50 border-[2px] sm: w-[375px] md:w-full`}>
-      <nav
-        className="h-[5rem] flex items-center justify-between md:justify-center
-        px-6
-      md:space-x-[33.5%] "
-      >
+    <header className={`bg-green-50  w-[375px] md:w-full`}>
+      <nav className="flex items-center justify-between   border ">
         <img src={logo} alt="logo" />
-
         {menu && (
-          <div className={`absolute `}>
+          <div className={`absolute`}>
             <MenuList className={``} />
           </div>
         )}
-        <div className="hidden md:flex items-center justify-around">
-          <ul className=" flex mx-[1rem] gap-4  uppercase">
-            {navitem.map((item, idx) => {
-              return (
-                <li
-                  className="h-full hover:border-b py-6 border-black"
-                  key={idx}
-                >
-                  {item}
-                </li>
-              );
-            })}
+        <div className="hidden md:flex items-center justify-between gap-x-[1rem]">
+          <ul className=" flex items-center gap-4  uppercase">
+            <Mapper
+              util={navitem}
+              styles={`cursor-pointer hover:border-b py-6 border-black`}
+            />
           </ul>
-          <button className="bg-black text-white ">{btn}</button>
+          <Btn styles={"bg-black text-white "} text="view plans" />
         </div>
         <img
           src={menu ? close : hamburger}
