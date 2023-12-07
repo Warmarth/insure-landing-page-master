@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 .karla {
   font-family: var(--family_1);
@@ -25,14 +26,48 @@
   font-family: var(--family_2);
 }
 
-.d{
-  background-image: url('./assets/images/bg-pattern-how-we-work-mobile.svg');
+.d {
+  background-image: url("./assets/images/bg-pattern-how-we-work-mobile.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
 }
-@media screen and (min-width:950px) {
-.d{
-  background-image: url('./assets/images/bg-pattern-how-we-work-desktop.svg');
+.nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("./assets/images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  transform: rotate(180deg);
 }
+.footer {
+  background-image: url("./assets/images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.hero {
+  background-image: url("./assets/images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 50%;
+}
+@media screen and (min-width: 950px) {
+  .d {
+    background-image: url("./assets/images/bg-pattern-how-we-work-desktop.svg");
+  }
+  .footer {
+    background-image: url("./assets/images/bg-pattern-footer-desktop.svg");
+    background-position: top left;
+    background-size: 50%;
+  }
+  .hero {
+    background-image: url("./assets/images/bg-pattern-intro-left-desktop.svg");
+    background-position: bottom;
+  }
 }

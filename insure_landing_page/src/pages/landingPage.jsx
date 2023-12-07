@@ -2,6 +2,7 @@ import Navbar from "../component/Navbar";
 import PageHero from "../component/PageHero";
 import Proceedure from "../component/Proceedure";
 import { Hero, proceedure } from "../component/data";
+import Footer from "../component/Footer";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <Navbar />
       <PageHero props={Hero} />
       <Proceedure props={proceedure} />
-      {/* <FindCard /> */}
+      <Footer props={proceedure} />
     </main>
   );
 };

@@ -1,6 +1,7 @@
 const Btn = (props) => {
   return <button className={props.styles}>{props.text}</button>;
 };
+
 const Mapper = (props) => {
   return props.util.map((item, idx) => {
     return (
@@ -10,6 +11,17 @@ const Mapper = (props) => {
     );
   });
 };
+
+const Dispas = (props) => {
+  return (
+    <div className={props.styles}>
+      {props.util.map((item, idx) => {
+        return <img src={item} alt="" key={idx} className={props.style} />;
+      })}
+    </div>
+  );
+};
+
 const Mapp = (props) => {
   return props.utilis.map((items, idx) => {
     return (
@@ -21,4 +33,4 @@ const Mapp = (props) => {
     );
   });
 };
-export { Btn, Mapper, Mapp };
+export { Btn, Mapper, Mapp, Dispas };

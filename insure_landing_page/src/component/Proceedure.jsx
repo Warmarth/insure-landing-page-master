@@ -5,28 +5,28 @@ const Proceedure = ({ props }) => {
   const { title, card } = props;
 
   return (
-    <div className={`py-[10rem] md:py-0 md:w-11/12 w-[375px] `}>
-      <div className="md:mt-[20rem] flex flex-col items-center lg:items-start border lg:w-5/6  ">
-        <div className="my-[1rem] w-[10rem] h-[.04rem] bg-[--Very-Violet]"></div>
+    <div
+      className={`py-[10rem] md:py-0 md:pb-[10rem] md:w-full  flex md:justify-center `}
+    >
+      <div className="md:mt-[20rem] flex flex-col items-center lg:items-start  md:w-5/6 w-[375px] ">
+        <div className="mb-[1.5rem] w-[8rem] h-[.04rem] bg-[--Very-Violet] "></div>
         <h1
           className={`text-[--font-family_1] first-letter:capitalize font-bold text-[2.5rem] md:text-left text-center lg:text-left mb-[3rem] karla`}
         >
           {title}
         </h1>
         <div
-          className={`flex flex-col md:flex-row gap-[3em]
-         items-center md:items-start justify-between `}
+          className={`flex flex-col w-full md:flex-row items-center md:items-start justify-between `}
         >
           <Mapp
             utilis={card}
-            styles={`w-[20rem] mb-2 space-y-6 flex flex-col items-center text-center md:items-start
-                md:text-left justify-center`}
+            styles={`w-[20rem] mb-[8rem] space-y-5 flex flex-col items-center text-center md:items-start md:text-left  justify-center`}
             h1={"text-3xl karla"}
             p={`dmSerif`}
           />
         </div>
         <div
-          className={` px-[3rem] border text-center gap-y-[2rem] d h-[20em] flex flex-col items-center justify-center bg-[--Dark-Violet] text-[--Very-Gray]  lg:flex-row w-full lg:justify-between lg:h-[8rem]`}
+          className={`d px-[3rem] text-center gap-y-[2rem] h-[20em] flex flex-col items-center justify-center bg-[--Dark-Violet] text-[--Very-Gray]  md:flex-row w-full md:justify-between md:h-[12rem]`}
         >
           <h1
             className={`text-[2.5rem] font-bold  
