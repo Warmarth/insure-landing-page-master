@@ -6,7 +6,7 @@ import Footer from "../component/Footer";
 
 const Home = () => {
   return (
-    <main className={``}>
+    <main className={`w-[375px] md:w-full`}>
       <Navbar />
       <PageHero props={Hero} />
       <Proceedure props={proceedure} />

@@ -19,30 +19,25 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
         {menu && (
           <div
-            className={`absolute w-[375px] h-[28rem] top-0 left-0 flex items-center flex-col flex-1 justify-start gap-y-[1rem] cursor-pointer  translate-y-[4.2rem] text-[--gray-Violet] font-bold md:hidden py-[2rem] bg-[--Very-Violet] nav`}
-          >
+            className={`absolute w-[375px] h-[28rem] top-0 left-0 flex items-center flex-col flex-1 justify-start gap-y-[1rem] cursor-pointer text-white  translate-y-[4.2rem] font-bold md:hidden py-[2rem] bg-[--Very-Violet] nav uppercase`}
+            >
             <Mapper
               util={navitem}
-              styles={` uppercase text-center py-2 hover:text-white`}
+              styles={`  text-center py-2 hover:text-green-400 `}
             />
-            <Btn
-              styles={
-                " text-white px-[30%] py-2 uppercase cursor-pointer border hover:text-[--Very-Gray]"
-              }
-              text="view plans"
-            />
+            <Btn styles={" px-[30%] py-2 border"} text="VIEW PLANS" />
           </div>
         )}
         <div className="hidden md:flex items-center justify-between gap-x-[1rem] uppercase font-bold text-[.789rem]">
           <ul className=" flex items-center gap-4">
             <Mapper
               util={navitem}
-              styles={`text-white font-bold cursor-pointer`}
+              styles={`text-[--Grayish-Blue] hover:text-[--Very-Violet] font-bold cursor-pointer`}
             />
           </ul>
           <Btn
             styles={
-              "bg-[--Very-Gray] text-white px-6 py-2 cursor-pointer uppercase"
+              " text-black hover:bg-[--Very-Violet]  border hover:text-white px-6 py-2 cursor-pointer uppercase"
             }
             text="view plans"
           />

@@ -41,9 +41,9 @@
   left: 0;
   background-image: url("./assets/images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
   transform: rotate(180deg);
+  /* background-position: left; */
+  /* background-size: contain; */
 }
 .footer {
   background-image: url("./assets/images/bg-pattern-footer-mobile.svg");
@@ -51,13 +51,33 @@
   background-position: top;
   background-size: contain;
 }
-.hero {
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-image: url("./assets/images/bg-pattern-intro-left-mobile.svg");
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 50%;
+  background-position: bottom left;
+  background-size: 9rem;
+  transform: translateY(3rem);
 }
-@media screen and (min-width: 950px) {
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("./assets/images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 7rem;
+  transform: translate(-7rem, 35rem);
+}
+@media screen and (min-width: 800px) {
   .d {
     background-image: url("./assets/images/bg-pattern-how-we-work-desktop.svg");
   }
@@ -66,8 +86,30 @@
     background-position: top left;
     background-size: 50%;
   }
-  .hero {
+  .hero::after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* left: 0; */
+    background-image: url("./assets/images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 35%;
+    transform: translate(10%, -20%);
+    position: absolute;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* right: 0; */
+    left: 0;
     background-image: url("./assets/images/bg-pattern-intro-left-desktop.svg");
-    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 18%;
+    transform: translate(-10%, 14rem);
   }
 }
