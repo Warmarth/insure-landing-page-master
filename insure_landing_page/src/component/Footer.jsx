@@ -7,9 +7,10 @@ const Footer = ({ props }) => {
     <div className="w-[375px] md:w-full footer bg-[--Very-Gray] ">
       <div className={`md:w-5/6 mx-auto`}>
         <div className="w-full flex flex-col justify-end pb-[2rem] items-center gap-y-[2rem] h-[12rem] md:flex-row md:justify-between md:h-[10rem] md:items-end">
-          <img src={logo} alt="logo" className=" " />
+          <img src={logo} alt="logo" />
           <Dispas
             util={footerTags.icons}
+            alt={footerTags.icons}
             styles={`flex gap-x-[1rem] items-center  `}
             style={`hover:bg-[--Very-Violet] rounded cursor-pointer`}
           />

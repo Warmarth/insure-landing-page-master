@@ -21,6 +21,7 @@ const Proceedure = ({ props }) => {
           <Mapp
             utilis={card}
             styles={`w-[20rem] mb-[8rem] space-y-5 flex flex-col items-center text-center md:items-start md:text-left  justify-center`}
+            alt={card}
             h1={"text-3xl karla"}
             p={`dmSerif`}
           />
@@ -36,7 +37,7 @@ const Proceedure = ({ props }) => {
           </h1>
           <Btn
             styles={
-              "border px-[2rem] text-[.785rem] py-2 uppercase tracking-widest"
+              " btn tracking-widest"
             }
             text={navitem[0]}
           />

@@ -8,15 +8,6 @@ import instagram from "../assets/images/icon-instagram.svg";
 import heroSmall from "../assets/images/image-intro-mobile.jpg";
 import heroBig from "../assets/images/image-intro-desktop.jpg";
 
-import bg_footer from "../assets/images/bg-pattern-footer-desktop.svg";
-import bg_footer1 from "../assets/images/bg-pattern-footer-mobile.svg";
-import bg_work from "../assets/images/bg-pattern-how-we-work-desktop.svg";
-import bg_work1 from "../assets/images/bg-pattern-how-we-work-mobile.svg";
-import bg_left from "../assets/images/bg-pattern-intro-left-desktop.svg";
-import bg_left1 from "../assets/images/bg-pattern-intro-left-mobile.svg";
-import bg_right from "../assets/images/bg-pattern-intro-right-desktop.svg";
-import bg_right1 from "../assets/images/bg-pattern-intro-right-mobile.svg";
-
 const navitem = ["how we work", "blog", "account"];
 const Hero = {
   title: `humanizing your insurance.`,
@@ -26,16 +17,6 @@ const Hero = {
 `,
   small: heroSmall,
   big: heroBig,
-};
-const patterns = {
-  pattern_1: bg_footer,
-  pattern_2: bg_footer1,
-  pattern_3: bg_work,
-  pattern_4: bg_work1,
-  pattern_5: bg_left,
-  pattern_6: bg_left1,
-  pattern_7: bg_right,
-  pattern_8: bg_right1,
 };
 
 const proceedure = {
@@ -79,4 +60,4 @@ const proceedure = {
     },
   },
 };
-export { navitem, Hero, proceedure, patterns };
+export { navitem, Hero, proceedure };

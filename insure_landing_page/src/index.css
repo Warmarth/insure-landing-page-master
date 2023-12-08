@@ -45,6 +45,19 @@
   /* background-position: left; */
   /* background-size: contain; */
 }
+.btn {
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 1px solid var(--Very-Gray);
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: var(--Very-Gray);
+  color: var(--Dark-Violet);
+}
+
 .footer {
   background-image: url("./assets/images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
@@ -77,7 +90,7 @@
   background-size: 7rem;
   transform: translate(-7rem, 35rem);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .d {
     background-image: url("./assets/images/bg-pattern-how-we-work-desktop.svg");
   }
