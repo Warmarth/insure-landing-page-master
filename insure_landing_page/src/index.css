@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,8 +43,6 @@
   background-image: url("./assets/images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
   transform: rotate(180deg);
-  /* background-position: left; */
-  /* background-size: contain; */
 }
 .btn {
   outline: none;
@@ -52,6 +51,7 @@
   cursor: pointer;
   border: 1px solid var(--Very-Gray);
   text-transform: uppercase;
+  position: relative;
 }
 .btn:hover {
   background-color: var(--Very-Gray);
@@ -75,7 +75,7 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 9rem;
-  transform: translateY(3rem);
+  transform: translateY(3.5rem);
 }
 .hero::before {
   content: "";

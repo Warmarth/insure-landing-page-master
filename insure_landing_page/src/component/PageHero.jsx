@@ -8,7 +8,7 @@ const PageHero = ({ props }) => {
   useEffect(() => {
     setInterval(() => {
       window.innerWidth < width ? setImageWidth(small) : setImageWidth(big);
-    }, 500);
+    }, 100);
   }, [imageWidth]);
 
   return (
@@ -17,7 +17,7 @@ const PageHero = ({ props }) => {
         className={`text-white md:flex items-start justify-between flex-row-reverse md:w-5/6 static md:translate-y-[20%] hero`}
       >
         <div>
-          <img src={imageWidth} className="w-full" />
+          <img src={imageWidth} className="" />
         </div>
         <div
           className={`text-center md:text-left flex items-center md:items-start flex-col gap-x-4 space-y-6 py-[1rem] md:py-0`}
@@ -31,7 +31,7 @@ const PageHero = ({ props }) => {
             </h1>
             <p className={`leading-[2] text-[16px] px-3 md:px-0`}>{content}</p>
 
-            <Btn styles={`relative btn`} text="view plans" />
+            <Btn styles={` btn`} text="view plans" />
           </div>
         </div>
       </div>
